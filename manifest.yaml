@@ -1,0 +1,41 @@
+---
+syms:
+  common:
+    zshenv:
+      origin: "./src/core/.zshenv"
+      destiny: "${home}/.zshenv"
+    zshignore:
+      origin: "./src/core/.zshignore"
+      destiny: "${home}/.config/zsh/.zshignore"
+    zshrc:
+      origin: "./src/core/.zshrc"
+      destiny: "${home}/.config/zsh/.zshrc"
+    exports:
+      origin: "./core/exports.zsh"
+      destiny: "${home}/.config/zsh/exports.zsh"
+  arch:
+    aliases:
+      origin: "./arch/aliases.zsh"
+      destiny: "${home}/.config/zsh/aliases.zsh"
+    functions:
+      origin: "./arch/functions.zsh"
+      destiny: "${home}/.config/zsh/functions.zsh"
+    heavy-functions:
+      origin: "./arch/heavy-functions.zsh"
+      destiny: "${home}/.config/zsh/heavy-functions.zsh"
+    hooks:
+      origin: "./arch/hooks.zsh"
+      destiny: "${home}/.config/zsh/hooks.zsh"
+  bedrock:
+    aliases:
+      origin: "./bedrock/aliases.zsh"
+      destiny: "${home}/.config/zsh/aliases.zsh"
+    functions:
+      origin: "./bedrock/functions.zsh"
+      destiny: "${home}/.config/zsh/functions.zsh"
+    heavy-functions:
+      origin: "./bedrock/heavy-functions.zsh"
+      destiny: "${home}/.config/zsh/heavy-functions.zsh"
+    hooks:
+      origin: "./bedrock/hooks.zsh"
+      destiny: "${home}/.config/zsh/hooks.zsh"
