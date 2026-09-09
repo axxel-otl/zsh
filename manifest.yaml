@@ -5,18 +5,18 @@ syms:
       origin: "src/core.zshenv"
       destiny: ".zshenv"
     zshignore:
-      origin: "src/core.zshignore"
-      destiny: ".config/zsh.zshignore"
+      origin: "src/core/.zshignore"
+      destiny: ".config/zsh/.zshignore"
     zshrc:
-      origin: "src/core.zshrc"
-      destiny: ".config/zsh.zshrc"
+      origin: "src/core/.zshrc"
+      destiny: ".config/zsh/.zshrc"
     exports:
       origin: "src/core/exports.zsh"
       destiny: ".config/zsh/exports.zsh"
   arch:
     aliases:
       origin: "src/arch/aliases.zsh"
-      destiny: ".config/zshaliases.zsh"
+      destiny: ".config/zsh/aliases.zsh"
     functions:
       origin: "src/arch/functions.zsh"
       destiny: ".config/zsh/functions.zsh"
@@ -29,7 +29,7 @@ syms:
   bedrock:
     aliases:
       origin: "src/bedrock/aliases.zsh"
-      destiny: ".config/zshaliases.zsh"
+      destiny: ".config/zsh/aliases.zsh"
     functions:
       origin: "src/bedrock/functions.zsh"
       destiny: ".config/zsh/functions.zsh"
