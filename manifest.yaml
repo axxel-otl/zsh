@@ -1,4 +1,8 @@
 ---
+dependencies:
+  zsh:
+    package: "zsh"
+    repo: "extra"
 syms:
   common:
     zshenv:
