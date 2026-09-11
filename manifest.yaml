@@ -6,7 +6,7 @@ dependencies:
 syms:
   common:
     zshenv:
-      origin: "src/core.zshenv"
+      origin: "src/core/.zshenv"
       destiny: ".zshenv"
     zshignore:
       origin: "src/core/.zshignore"
