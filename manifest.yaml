@@ -30,6 +30,15 @@ syms:
     hooks:
       origin: "src/arch/hooks.zsh"
       destiny: ".config/zsh/hooks.zsh"
+    prompt:
+      origin: "src/arch/prompt.zsh"
+      destiny: ".config/zsh/prompt.zsh"
+    startup:
+      origin: "src/arch/startup.zsh"
+      destiny: ".config/zsh/startup.zsh"
+    hooks:
+      origin: "src/arch/hooks.zsh"
+      destiny: ".config/zsh/hooks.zsh"
   bedrock:
     aliases:
       origin: "src/bedrock/aliases.zsh"
@@ -40,6 +49,15 @@ syms:
     heavy-functions:
       origin: "src/bedrock/heavy-functions.zsh"
       destiny: ".config/zsh/heavy-functions.zsh"
+    hooks:
+      origin: "src/bedrock/hooks.zsh"
+      destiny: ".config/zsh/hooks.zsh"
+    prompt:
+      origin: "src/bedrock/prompt.zsh"
+      destiny: ".config/zsh/prompt.zsh"
+    startup:
+      origin: "src/bedrock/startup.zsh"
+      destiny: ".config/zsh/startup.zsh"
     hooks:
       origin: "src/bedrock/hooks.zsh"
       destiny: ".config/zsh/hooks.zsh"
