@@ -36,9 +36,9 @@ syms:
     startup:
       origin: "src/arch/startup.zsh"
       destiny: ".config/zsh/startup.zsh"
-    hooks:
-      origin: "src/arch/hooks.zsh"
-      destiny: ".config/zsh/hooks.zsh"
+    variables:
+      origin: "src/arch/variables.zsh"
+      destiny: ".config/zsh/variables.zsh"
   bedrock:
     aliases:
       origin: "src/bedrock/aliases.zsh"
@@ -58,6 +58,13 @@ syms:
     startup:
       origin: "src/bedrock/startup.zsh"
       destiny: ".config/zsh/startup.zsh"
-    hooks:
-      origin: "src/bedrock/hooks.zsh"
-      destiny: ".config/zsh/hooks.zsh"
+    variables:
+      origin: "src/bedrock/variables.zsh"
+      destiny: ".config/zsh/variables.zsh"
+make:
+  common:
+    own:
+      origin: "src/common/own.zsh"
+      destiny: ".config/zsh/own.zsh"
+      content: |
+        # Add your own configuration for the .zshrc in here
