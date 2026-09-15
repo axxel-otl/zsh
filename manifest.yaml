@@ -64,7 +64,7 @@ syms:
 make:
   common:
     own:
-      origin: "src/common/own.zsh"
+      origin: "src/core/own.zsh"
       destiny: ".config/zsh/own.zsh"
       content: |
         # Add your own configuration for the .zshrc in here
