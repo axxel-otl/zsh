@@ -1,16 +1,17 @@
-Cafecito() {
-  if [[ -x "$(command -v paru)" ]]; then
-    paru -Syu --devel
-    paru -Rns $(paru -Qdtq)
-    paru -Sc
-  elif [[ -x "$(command -v yay)" ]]; then
-    yay -Syu --devel
-    yay -Rns $(yay -Qdtq)
-    yay -Sc
-  else
-    sudo pacman -Syu
-    sudo pacman -Rns $(pacman -Qdtq)
-  fi
+function Cafecito(){
+    if command -v paru &> /dev/null; then
+      paru -Syuq --noconfirm
+      paru -Rns $(paru -Qdtq) --noconfirm
+      paru -Sc --noconfirm
+    elif command -v yay &> /dev/null; then
+      yay -Syuq --noconfirm
+      yay -Rns $(paru -Qdtq) --noconfirm
+      yay -Sc --noconfirm
+    else
+      sudo pacman -Syuq --noconfirm
+      sudo pacman -Rns $(pacman -Qdtq) --noconfirm
+      sudo pacman -Sc --noconfirm
+    fi
 }
 
 Copy() {
