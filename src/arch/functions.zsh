@@ -274,3 +274,6 @@ ZApply() {
         sudo stow -d /opt/dotfiles -t "$home" -R arch
     done < <(getent passwd)
 }
+InkReinstall() {
+  curl -LfsS "https://gitlab.com/axxel-otl/InkordiousDotfiles/-/raw/$(curl -LfsS 'https://gitlab.com/api/v4/projects/axxel-otl%2FInkordiousDotfiles/releases/permalink/latest' | yq -r '.tag_name')/install.sh" | bash
+}
